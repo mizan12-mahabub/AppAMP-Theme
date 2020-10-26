@@ -1,0 +1,486 @@
+/* menu scation */
+.mainMenu{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 3px 0px;
+    height: 62px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.mainMenu img {
+    width: 50px;
+    margin-right: 4px;
+}
+
+.mainMenu span a{
+
+    font-size: 21px;
+     color: black;
+}
+.mainMenu span a:hover{
+    text-decoration: none;
+    color: rgb(114, 111, 111);
+}
+.mainMenu ul{
+    text-align: center;
+}
+.mainMenu ul li{
+    display: inline-block;
+}
+.mainMenu ul li a {
+    display: block;
+    padding: 17px 20px;
+    transition: .4s;
+    color: #625a5a;
+}
+.mainMenu ul li a:hover {
+    text-decoration: none;
+    color: #7f8fa6;
+}
+/* dropdown css */
+.mainMenu ul li{
+    position: relative;
+}
+.mainMenu ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0 !important;
+    width: 263px;
+    display: inline-grid;
+    overflow: hidden;
+    text-align: initial;
+    background: #fff;
+    padding-left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: .6s;
+}
+.mainMenu ul li ul a {
+    display: block;
+    padding: 13px 19px;
+    color: #625a5a;
+    font-size: 17px;
+    border-bottom: 1px solid #ddd;
+}
+.mainMenu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+/* banner scation */
+.bannerSaction{
+    background-image: url(../img/mbr-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 180px;
+    color: #fff;
+    position: relative;
+    z-index: 3;
+}
+.bannerSaction::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: -1;
+}
+.bannerSaction h2 {
+    font-size: 42px;
+    font-weight: 600;
+    margin: 28px 0px;
+}
+.bannerSaction h4 {
+    font-size: 28px;
+    font-weight: 400;
+}
+.bannerSaction input {
+	border: none;
+	padding: 16px 25px;
+	margin-right: 7px;
+	border-radius: 3px;
+	color: #757171;
+}
+.bannerSaction button {
+	padding: 15px 73px;
+	margin-bottom: 5px;
+	border-radius: 10px;
+	transition: .5s;
+	font-size: 20px;
+    font-weight: 600;
+    margin-left: 7px;
+}
+.bannerSaction button:hover{
+    background-color: #fff;
+    color: skyblue;
+}
+/* hisab ar moto buji na */
+.hisabScation{}
+.hisabScation h1 {
+	font-weight: 600;
+	margin-top: 38px;
+	display: block;
+	text-align: center;
+}
+.hisabScation p {
+	display: block;
+	text-align: center;
+    font-size: 23px;
+    color: #625a5a;
+    margin-bottom: 60px;
+}
+/* poriciti  */
+.poricitiSction{}
+.poricitiSction h1 {
+	font-size: 44px;
+	font-weight: 600;
+	margin-top: 141px;
+}
+.poricitiSction p {
+	font-size: 20px;
+	line-height: 42px;
+    margin-bottom: 130px;
+    color: #625a5a;
+}
+.poricitiSction img{
+    max-width: 100%;
+}
+/* activity */
+.activitySction{}
+.activitySction h1 {
+	font-size: 59px;
+	font-weight: 600;
+	margin-top: 31px;
+}
+.activitySction h5 {
+	font-size: 30px;
+	margin-bottom: 61px;
+    margin-top: 25px;
+    color: #625a5a;
+}
+.activitySction img {
+	max-width: 50%;
+	float: left;
+	height: 220px;
+}
+.subHeadline {
+	width: 45%;
+	float: right;
+	margin-top: 37px;
+}
+.subHeadline h2 {
+	font-size: 22px;
+	font-weight: 500;
+}
+.subHeadline p {
+    font-size: 14px;
+    color: #625a5a;
+}
+.boxshawdo:hover {
+    box-shadow: 5px -2px #d7dadb;
+    transition: .5s;
+}
+.boxshawdo {
+	margin: 18px 0px;
+}
+/* img proricoy */
+.imgSction{}
+.imgSction h1 {
+	display: inline-block;
+	font-size: 48px;
+	margin-bottom: 48px;
+	font-weight: 500;
+	background:#bdbdbd;;
+	padding: 2px;
+}
+.imgSction img {
+	max-width: 100%;
+    margin-bottom: 32px;
+    transition: .5s;
+}
+.imgSction img:hover{
+    box-shadow: 2px 2px #9b9595;
+    
+}
+/* plannig */
+.planSction{}
+.planSction h1 {
+	font-weight: 400;
+	margin-top: 62px;
+	margin-bottom: 22px;
+}
+.planSction h4 {
+    font-size: 24px;
+    margin-bottom: 79px;
+    color: #625a5a;
+}
+.cardSection {
+	text-align: initial;
+	margin-bottom: 78px;
+	transition: .5s;
+	padding: 52px;
+}
+.cardSection:hover{
+    box-shadow: 3px 0px 7px #938c8c;
+}
+.cardSection:hover button{
+    background-color: rgb(60, 172, 60);
+    color: white;
+    transition: .4s;
+}
+.cardSection button:hover{
+    background-color: rgb(24, 21, 21);
+    color: white;
+    transition: .4s;
+}
+.cardSection h2 {
+	font-size: 40px;
+	font-weight: 500;
+}
+.cardSection h3 {
+	font-size: 19px;
+	font-weight: 300;
+	margin-top: 38px;
+    margin-bottom: 27px;
+    color: #625a5a;
+}
+.cardSection ul{}
+.cardSection ul li {
+	list-style: none;
+	margin-left: -34px;
+	font-size: 18px;
+    line-height: 67px;
+    color: #625a5a;
+}
+.cardSection ul li i {
+	color: #2be236;
+	margin-right: 11px;
+	font-size: 29px;
+}
+.cardSection button {
+	border: none;
+	padding: 13px 0px;
+	font-size: 26px;
+	font-weight: 600;
+}
+/* propail sction */
+.propileDiv{}
+.propileDiv h5 {
+    font-size: 23px;
+    color: #625a5a;
+}
+.propileDiv h1 {
+	font-size: 44px;
+	font-weight: 399;
+	margin-bottom: 88px;
+	margin-top: -40px;
+}
+.propileDiv p {
+	display: inline-block;
+    width: 700px;
+    color: #625a5a;
+}
+.radiusPhotoDiv {
+    width: 231px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.imgClass {
+    max-width: 50%;
+    border-radius: 50%;
+    margin-top: 6px;
+    height: 84px !important;
+}
+.radiusPhotoDiv h3 {
+	font-size: 24px;
+	display: block;
+	position: relative;
+	top: 13px;
+	left: -10px;
+}
+.radiusPhotoDiv h4 {
+    margin-left: -77px;
+    margin-top: 13px;
+    display: inline-block;
+    background: #bdbdbd;
+    color: #625a5a;
+}
+/* aboutSection */
+.aboutSction{}
+.aboutSction h1 {
+	font-size: 44px;
+	font-weight: 400;
+	padding: 31px 0px;
+	margin-top: 56px;
+}
+.aboutSction p {
+	font-size: 20px;
+	line-height: 1.6em;
+	margin-bottom: 90px;
+    font-weight: 399;
+    color: #625a5a;
+}
+/* worker */
+.workerDiv {
+    padding: 100px 0px;
+}
+.workerDiv img {
+	position: absolute;
+	width: 150px;
+	height: auto;
+	border-radius: 50%;
+	z-index: 1;
+	top: -70px;
+	left: 29px;
+}
+.workerContent {
+	position: relative;
+	padding: 74px 28px;
+    margin-bottom: 30px;
+    transition: .4s;
+}
+.workerContent:hover{
+    box-shadow: 1px 1px 30px #ddd3d3;
+}
+.workerContent h3 {
+	font-size: 31px;
+	font-weight: 400;
+	margin-top: 22px;
+}
+.workerContent h2 {
+	font-size: 32px;
+	margin-bottom: 15px;
+	font-weight: 300;
+}
+.workerContent p {
+	line-height: 1.7em;
+    font-weight: 300;
+    color: #625a5a;
+}
+.workerContent button {
+	border: none;
+	font-size: 20px;
+	font-weight: 600;
+}
+/* contuct */
+.contacetSction {
+    padding: 13px 0px;
+}
+.contacetSction h5 {
+	font-size: 23px;
+	font-weight: 400;
+    margin-bottom: -9px;
+    color: #625a5a;
+}
+.contacetSction h1 {
+	font-size: 51px;
+	font-weight: 500;
+	margin-bottom: 110px;
+}
+.contuctInput {
+	width: 561px;
+	padding: 26px 9px;
+	margin: auto;
+}
+.contuctInput h4{}
+.contuctInput textarea {
+	margin-bottom: 32px;
+}
+.input100 {
+	width: 95%;
+	padding: 21px 16px;
+    margin: 12px;
+    opacity: 0.4;
+    box-shadow: 1px 1px 30px #b5abab;
+}
+.input50 {
+	width: 45%;
+	padding: 21px 16px;
+	margin: 12px;
+	float: left;
+    opacity: 0.4;
+    box-shadow: 1px 1px 30px #b5abab;
+}
+.contuctInput button {
+	padding: 13px 0px;
+	font-size: 25px;
+	line-height: 29px;
+	font-weight: 600;
+	background: #6278df;
+    color: #fff;
+    transition: .5s;
+}
+.contuctInput button:hover{
+    background: #fff;
+    color: #6278df;
+    border: 1px solid #6278df;
+}
+/* location */
+.locationDiv {
+	width: 100%;
+	padding: 53px 0px;
+}
+.subLocation {
+	width: 700px;
+	padding: 33px 38px;
+	text-align: center;
+}
+.subLocation h3 {
+	font-size: 25px;
+    font-weight: 400;
+    color: #625a5a;
+}
+.subLocation h1 {
+	font-size: 48px;
+	font-weight: 500;
+	margin-bottom: 36px;
+}
+.subLocation button {
+    margin: 12px;
+    font-weight: 800;
+}
+.subLocation img {
+	max-width: 100%;
+	width: 623px;
+	margin-top: 33px;
+	height: auto;
+	margin-bottom: 50px;
+}
+/* puttar sction */
+.putarSction{
+    padding-bottom: 25px;
+}
+.putarSction h3 {
+	font-size: 18px;
+	display: inline-block;
+	padding: 17px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* responcrip css */
+@media (max-width:775px){
+    .poricitiSction p {
+        font-size: 16px;
+        line-height: 40px;
+    }
+    .poricitiSction h1 {
+        font-size: 40px;
+        margin-top: -11px;
+    }
+}
